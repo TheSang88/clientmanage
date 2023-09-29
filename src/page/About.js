@@ -13,7 +13,7 @@ const About = () => {
 						href='https://www.facebook.com/profile.php?id=100004873035772'
 						size='lg'
 					>
-
+						FACEBOOK
 					</Button>
 				</Col>
 			</Row>
