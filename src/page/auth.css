@@ -1,0 +1,35 @@
+.page {
+    /* background-color: rgb(202, 202, 202); */
+    height: 100vh;
+    background-image: url(../assets/backgroud.jpg);
+    padding-top: 40px;
+
+}
+
+.iconface {
+    background-color: #0778e9;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+.iconface :hover {
+    background-color: white;
+    color: #0778e9;
+    border-color: #0778e9;
+}
+
+.icongg {
+    background-color: #e90707;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+.icongg :hover {
+    background-color: white;
+    color: #e90707;
+    border-color: #e90707;
+}
+
+.fa-sharp fa-solid fa-eye {
+    position: absolute;
+}
