@@ -19,7 +19,7 @@ const NavbarMenu = () => {
 	const logout = () => logoutUser()
 
 	return (
-		<Navbar expand="lg" bg="primary" className="bg-body-tertiary">
+		<Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-dark">
 			<Container>
 				<Navbar.Brand to="/"><i class="fa-solid fa-cubes fa-2xl me-2 ms-2"></i>
 					MANAGE</Navbar.Brand>

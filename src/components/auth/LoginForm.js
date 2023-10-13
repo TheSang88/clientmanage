@@ -46,9 +46,9 @@ const LoginForm = () => {
 
                 <h3 className="d-flex justify-content-center" >Sign In</h3>
                 <div className="form-group mt-3">
-                    <label>Email address</label>
+                    <label>User Name</label>
                     <input
-                        type="email"
+                        type="text"
                         required
                         name='username'
                         className="form-control mt-1"
