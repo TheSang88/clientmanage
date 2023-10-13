@@ -48,6 +48,7 @@ const RegisterForm = () => {
                     <label>Full Name</label>
                     <input
                         type="text"
+                        required
                         className="form-control mt-1"
                         placeholder="Username"
                         name='username'
@@ -59,6 +60,7 @@ const RegisterForm = () => {
                     <label>Email address</label>
                     <input
                         type="email"
+                        required
                         className="form-control mt-1"
                         placeholder="Email Address"
                     />
@@ -67,6 +69,7 @@ const RegisterForm = () => {
                     <label>Password</label>
                     <input
                         type="password"
+                        required
                         className="form-control mt-1"
                         placeholder="Password"
                         name='password'
@@ -76,9 +79,10 @@ const RegisterForm = () => {
                 </div>
 
                 <div className="form-group mt-2">
-                    <label>Password</label>
+                    <label>Confirm Password</label>
                     <input
                         type="password"
+                        required
                         className="form-control mt-1"
                         placeholder="Confirm Password"
                         name='confirmPassword'

@@ -13,7 +13,6 @@ import SinglePost from '../components/posts/SinglePost'
 import AddPostModal from '../components/posts/AddPostModal'
 import UpdatePostModal from '../components/posts/UpdatePostModal'
 
-
 const Dashboard = () => {
 	// Contexts
 	const {
@@ -30,7 +29,6 @@ const Dashboard = () => {
 		setShowToast
 	} = useContext(PostContext)
 
-	// Start: Get all posts
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	useEffect(() => { getPosts() }, [])
 
@@ -39,6 +37,7 @@ const Dashboard = () => {
 	if (postsLoading) {
 		body = (
 			<div className='spinner-container'>
+				<h3>Please wait for the server</h3>
 				<Spinner animation='border' variant='info' />
 			</div>
 		)

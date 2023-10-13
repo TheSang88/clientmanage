@@ -19,7 +19,7 @@ const NavbarMenu = () => {
 	const logout = () => logoutUser()
 
 	return (
-		<Navbar expand="lg" className="bg-body-tertiary">
+		<Navbar expand="lg" bg="primary" className="bg-body-tertiary">
 			<Container>
 				<Navbar.Brand to="/"><i class="fa-solid fa-cubes fa-2xl me-2 ms-2"></i>
 					MANAGE</Navbar.Brand>
@@ -28,8 +28,6 @@ const NavbarMenu = () => {
 					<Nav className="me-auto">
 						<Nav.Link to='/dashboard'
 							as={Link}>Dashboard</Nav.Link>
-
-
 						<Nav.Link to='/about'
 							as={Link}>About</Nav.Link>
 						<NavDropdown title={username} id="basic-nav-dropdown">

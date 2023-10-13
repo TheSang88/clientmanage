@@ -1,6 +1,5 @@
 import { Link, Navigate } from "react-router-dom";
 import '../page/auth.css'
-
 import LoginForm from "../components/auth/LoginForm";
 import RegisterForm from "../components/auth/RegisterForm"
 import Button from 'react-bootstrap/Button';
@@ -18,6 +17,7 @@ const Auth = ({ authRoute }) => {
     if (authLoading)
         body = (
             <div className='d-flex justify-content-center mt-2'>
+                <h3>Please wait for the server</h3>
                 <Spinner animation='border' variant='info' />
             </div>
         )

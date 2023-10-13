@@ -48,7 +48,8 @@ const LoginForm = () => {
                 <div className="form-group mt-3">
                     <label>Email address</label>
                     <input
-                        type="text"
+                        type="email"
+                        required
                         name='username'
                         className="form-control mt-1"
                         placeholder="Enter email"
@@ -63,6 +64,7 @@ const LoginForm = () => {
                     </div>
                     <input
                         type="password"
+                        required
                         className="form-control mt-1"
                         placeholder="Enter password"
                         id='pass'

@@ -51,6 +51,9 @@ const AddPostModal = () => {
 			<Form onSubmit={onSubmit}>
 				<Modal.Body>
 					<Form.Group>
+						<Form.Text>
+							Application Name
+						</Form.Text>
 						<Form.Control
 							type='text'
 							placeholder='Title'
@@ -67,6 +70,7 @@ const AddPostModal = () => {
 					<Form.Group>
 						<Form.Control
 							as='textarea'
+							required
 							rows={3}
 							placeholder='Description'
 							name='description'
@@ -75,8 +79,12 @@ const AddPostModal = () => {
 						/>
 					</Form.Group>
 					<Form.Group>
+						<Form.Text>
+							Application Path
+						</Form.Text>
 						<Form.Control
 							type='text'
+							required
 							placeholder='Youtube Tutorial URL'
 							name='url'
 							value={url}

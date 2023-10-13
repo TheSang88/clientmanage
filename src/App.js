@@ -4,13 +4,11 @@ import AuthContextProvider from './contexts/AuthContext'
 import PostContextProvider from './contexts/PostContext'
 import ProtectedRoute from './components/routing/ProtectedRoute'
 import About from './page/About'
-//import Dashboard from './page/Dashboard'
 
 function App() {
   return (
     <AuthContextProvider>
       <PostContextProvider>
-
         <Routes>
           <Route path='/' element={<Navigate to='/login' />}></Route>
           <Route path='/login' element={<Auth authRoute='login' />}></Route>

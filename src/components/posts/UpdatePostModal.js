@@ -36,11 +36,6 @@ const UpdatePostModal = () => {
 		setShowToast({ show: true, message, type: success ? 'success' : 'danger' })
 	}
 
-	// const resetAddPostData = () => {
-	// 	setNewPost({ title: '', description: '', url: '', status: 'TO LEARN' })
-	// 	setShowAddPostModal(false)
-	// }
-
 	return (
 		<Modal show={showUpdatePostModal} onHide={closeDialog}>
 			<Modal.Header closeButton>
@@ -49,6 +44,10 @@ const UpdatePostModal = () => {
 			<Form onSubmit={onSubmit}>
 				<Modal.Body>
 					<Form.Group>
+						<Form.Text>
+							Application Name
+						</Form.Text>
+
 						<Form.Control
 							type='text'
 							placeholder='Title'
@@ -58,8 +57,8 @@ const UpdatePostModal = () => {
 							value={title}
 							onChange={onChangeUpdatedPostForm}
 						/>
-						<Form.Text id='title-help' muted>
-							Required
+						<Form.Text>
+							Description
 						</Form.Text>
 					</Form.Group>
 					<Form.Group>
@@ -73,15 +72,21 @@ const UpdatePostModal = () => {
 						/>
 					</Form.Group>
 					<Form.Group>
+						<Form.Text id='title-help' muted>
+							Application Path
+						</Form.Text>
 						<Form.Control
 							type='text'
-							placeholder='Youtube Tutorial URL'
+							placeholder='Application Path'
 							name='url'
 							value={url}
 							onChange={onChangeUpdatedPostForm}
 						/>
 					</Form.Group>
 					<Form.Group>
+						<Form.Text id='title-help' muted>
+							Status
+						</Form.Text>
 						<Form.Control
 							as='select'
 							value={status}
